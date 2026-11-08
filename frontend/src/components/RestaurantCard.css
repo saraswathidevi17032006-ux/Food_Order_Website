@@ -1,0 +1,104 @@
+.restaurant-card {
+  display: block;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.restaurant-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.img-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.restaurant-card:hover .img-container img {
+  transform: scale(1.1);
+}
+
+.time-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: var(--white);
+  color: var(--secondary);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.restaurant-name {
+  font-size: 1.25rem;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--background);
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.star-icon {
+  color: #fbbf24;
+}
+
+.categories {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  border-top: 1px solid #f1f2f6;
+  padding-top: 15px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.fee {
+  font-weight: 600;
+  color: var(--secondary);
+}

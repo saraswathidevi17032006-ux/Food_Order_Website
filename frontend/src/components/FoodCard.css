@@ -1,0 +1,91 @@
+.food-card {
+  display: block;
+  overflow: hidden;
+  transition: var(--transition);
+  padding: 10px;
+}
+
+.food-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.food-img-container {
+  position: relative;
+  height: 180px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.food-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.food-card:hover .food-img-container img {
+  transform: scale(1.08);
+}
+
+.veg-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #2ed573;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+}
+
+.food-card-body {
+  padding: 15px 5px 5px 5px;
+}
+
+.food-name {
+  font-size: 1.1rem;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.food-restaurant {
+  color: var(--text-light);
+  font-size: 0.85rem;
+  margin-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.food-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.food-price {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.add-cart-btn {
+  background: var(--background);
+  color: var(--primary);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.add-cart-btn:hover {
+  background: var(--primary);
+  color: var(--white);
+  transform: scale(1.1);
+}

@@ -1,0 +1,33 @@
+.footer {
+  background: var(--white);
+  padding: 30px 0;
+  margin-top: auto;
+  border-top: 1px solid var(--glass-border);
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.02);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.made-with {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.heart-icon {
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,142 @@
+.food-details-page {
+  padding: 20px 0;
+}
+
+.food-details-card {
+  display: flex;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.food-image-section {
+  flex: 1;
+  min-height: 400px;
+}
+
+.food-image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.food-info-section {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.food-header {
+  margin-bottom: 20px;
+}
+
+.veg-label {
+  display: inline-block;
+  background: #2ed573;
+  color: white;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.food-title {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.restaurant-name {
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+.food-price-large {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 30px;
+}
+
+.food-description {
+  margin-bottom: 40px;
+  flex-grow: 1;
+}
+
+.food-description h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.food-description p {
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+.purchase-section {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  background: var(--background);
+  border-radius: var(--radius-full);
+  padding: 5px;
+}
+
+.qty-btn {
+  background: var(--white);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+  color: var(--secondary);
+  transition: var(--transition);
+}
+
+.qty-btn:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.qty-display {
+  width: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.add-to-cart-large {
+  flex: 1;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .food-details-card {
+    flex-direction: column;
+  }
+  
+  .food-image-section {
+    min-height: 250px;
+  }
+  
+  .food-info-section {
+    padding: 20px;
+  }
+  
+  .purchase-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .quantity-selector {
+    justify-content: center;
+  }
+}
